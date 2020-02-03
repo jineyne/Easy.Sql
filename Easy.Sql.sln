@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Easy.Sql", "Easy.Sql\Easy.Sql.csproj", "{309EC1B8-7C79-4A53-ADFD-9FE19347638E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Easy.Sql.SQLite", "Easy.Sql.SQLite\Easy.Sql.SQLite.csproj", "{261B7158-174B-4685-A113-E9B5370B244C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Easy.Sql.SQLite.Test", "Easy.Sql.SQLite.Test\Easy.Sql.SQLite.Test.csproj", "{07289240-2017-464F-8810-A38E618CE7D8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{309EC1B8-7C79-4A53-ADFD-9FE19347638E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{309EC1B8-7C79-4A53-ADFD-9FE19347638E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{309EC1B8-7C79-4A53-ADFD-9FE19347638E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{261B7158-174B-4685-A113-E9B5370B244C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{261B7158-174B-4685-A113-E9B5370B244C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{261B7158-174B-4685-A113-E9B5370B244C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{261B7158-174B-4685-A113-E9B5370B244C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07289240-2017-464F-8810-A38E618CE7D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07289240-2017-464F-8810-A38E618CE7D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07289240-2017-464F-8810-A38E618CE7D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07289240-2017-464F-8810-A38E618CE7D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
