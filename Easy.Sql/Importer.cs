@@ -21,6 +21,10 @@ namespace Easy.Sql {
             batch.AddExportedValue(mContainer);
 
             mContainer.Compose(batch);
+
+            IoC.GetInstance = GetInstance;
+            IoC.GetAllInstances = GetAllInstances;
+            IoC.BuildUp = BuildUp;
         }
 
         public object GetInstance(Type serviceType, String key) {
