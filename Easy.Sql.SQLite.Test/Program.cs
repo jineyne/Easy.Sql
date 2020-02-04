@@ -4,7 +4,7 @@
             var importer = new Importer();
             importer.Initialize();
 
-            var db = IoC.Get<IDatabase>();
+            var db = IoC.Get<IEasyDatabase>();
             db.Open("database.db");
         }
     }
