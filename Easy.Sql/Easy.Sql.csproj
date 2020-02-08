@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Document\EasyDataType.cs" />
+    <Compile Include="Document\ObjectId.cs" />
     <Compile Include="IEasyDatabase.cs" />
     <Compile Include="Importer.cs" />
     <Compile Include="IoC.cs" />
