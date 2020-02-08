@@ -35,6 +35,13 @@ namespace Easy.Sql.Document {
         /// </summary>
         public int Increment { get; }
 
+        /// <summary>
+        /// Get creation time
+        /// </summary>
+        public DateTime CreationTime {
+            get { return EasyValue.UnixEpoch.AddSeconds(this.Timestamp); }
+        }
+
         #endregion
 
         #region Ctor
@@ -111,8 +118,7 @@ namespace Easy.Sql.Document {
             if (string.IsNullOrEmpty(value))
                 throw new ArgumentNullException(nameof(value));
             if (value.Length != 24)
-                throw new ArgumentException(
-                    $"ObjectId strings should be 24 hex characters, got {value.Length} : \"{value}\"");
+                throw new ArgumentException(string.Format("ObjectId strings should be 24 hex characters, got {0} : \"{1}\"", value.Length, value));
 
             var bytes = new byte[12];
 
@@ -290,8 +296,7 @@ namespace Easy.Sql.Document {
         /// Creates a new ObjectId.
         /// </summary>
         public static ObjectId NewObjectId() {
-            var UnixEpoch = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
-            var timestamp = (long) Math.Floor((DateTime.UtcNow - UnixEpoch).TotalSeconds);
+            var timestamp = (long) Math.Floor((DateTime.UtcNow - EasyValue.UnixEpoch).TotalSeconds);
             var inc = Interlocked.Increment(ref _increment) & 0x00ffffff;
 
             return new ObjectId((int) timestamp, _machine, _pid, inc);
