@@ -49,8 +49,6 @@
     <Compile Include="Document\Json\JsonWriter.cs" />
     <Compile Include="Document\ObjectId.cs" />
     <Compile Include="IEasyDatabase.cs" />
-    <Compile Include="Importer.cs" />
-    <Compile Include="IoC.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utility\Extensions\DateExtensions.cs" />
     <Compile Include="Utility\Extensions\DictionaryExtensions.cs" />

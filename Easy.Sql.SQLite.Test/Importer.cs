@@ -6,7 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 
-namespace Easy.Sql {
+namespace Easy.Sql.SQLite.Test {
     public class Importer {
         private CompositionContainer mContainer;
 

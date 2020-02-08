@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Easy.Sql {
+namespace Easy.Sql.SQLite.Test {
     /// <summary>
     ///     Used by the framework to pull instances from an IoC container and to inject dependencies into certain existing
     ///     classes.
