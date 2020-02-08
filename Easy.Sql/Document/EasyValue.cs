@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using Easy.Sql.Document.Json;
 using Easy.Sql.Utility.Extensions;
 using static System.String;
 
@@ -363,6 +364,10 @@ namespace Easy.Sql.Document {
             }
 
             return left.AsDouble / right.AsDouble;
+        }
+
+        public override string ToString() {
+            return JsonSerializer.Serialize(this);
         }
 
         public static implicit operator int(EasyValue value) {
