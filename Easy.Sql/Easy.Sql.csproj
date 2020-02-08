@@ -45,6 +45,8 @@
     <Compile Include="Document\EasyDocument.cs" />
     <Compile Include="Document\EasyDataType.cs" />
     <Compile Include="Document\EasyValue.cs" />
+    <Compile Include="Document\Json\JsonSerializer.cs" />
+    <Compile Include="Document\Json\JsonWriter.cs" />
     <Compile Include="Document\ObjectId.cs" />
     <Compile Include="IEasyDatabase.cs" />
     <Compile Include="Importer.cs" />
