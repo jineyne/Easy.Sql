@@ -107,6 +107,8 @@ namespace Easy.Sql.Document {
         }
 
         // as types
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        public EasyDocument AsDocument => this as EasyDocument;
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         public byte[] AsBinary => RawValue as byte[];
@@ -222,6 +224,9 @@ namespace Easy.Sql.Document {
 
                 case EasyDataType.String:
                     return Compare(AsString, other.AsString, StringComparison.Ordinal);
+
+                case EasyDataType.Document:
+                    return AsDocument.CompareTo(other);
 
                 case EasyDataType.ObjectId:
                     return AsObjectId.CompareTo(other.AsObjectId);
