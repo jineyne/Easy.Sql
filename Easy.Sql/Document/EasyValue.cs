@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
-using Easy.Sql.Utility;
+using Easy.Sql.Utility.Extensions;
 using static System.String;
 
 namespace Easy.Sql.Document {

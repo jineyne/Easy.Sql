@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Easy.Sql.Utility {
+namespace Easy.Sql.Utility.Extensions {
     internal static class DateExtensions {
         /// <summary>
         ///     Truncate DateTime in milliseconds
