@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Document\EasyDocument.cs" />
     <Compile Include="Document\EasyDataType.cs" />
     <Compile Include="Document\EasyValue.cs" />
     <Compile Include="Document\ObjectId.cs" />
